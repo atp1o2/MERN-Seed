@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-
-// Import Style
-import styles from './PostListItem.css';
+import styles from '../../../styles/PostListItem.css';
 
 function PostListItem(props) {
   return (

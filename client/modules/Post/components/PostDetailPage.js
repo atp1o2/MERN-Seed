@@ -2,14 +2,9 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 
-// Import Style
-import styles from '../../components/PostListItem/PostListItem.css';
-
-// Import Actions
-import { fetchPost } from '../../PostActions';
-
-// Import Selectors
-import { getPost } from '../../PostReducer';
+import styles from '../../../styles/PostListItem.css';
+import { fetchPost } from '../PostActions';
+import { getPost } from '../PostReducer';
 
 export function PostDetailPage(props) {
   return (

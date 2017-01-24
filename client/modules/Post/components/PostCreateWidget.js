@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
-// Import Style
-import styles from './PostCreateWidget.css';
+import styles from '../../../styles/PostCreateWidget.css';
 
 export class PostCreateWidget extends Component {
   addPost = () => {
