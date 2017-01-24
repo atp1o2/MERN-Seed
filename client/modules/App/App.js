@@ -1,14 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import styles from '../../styles/App.css';
 
-// Import Style
-import styles from './App.css';
-
-// Import Components
 import Helmet from 'react-helmet';
 // import DevTools from './components/DevTools';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // Import Actions
 import { toggleAddPost } from './AppActions';
