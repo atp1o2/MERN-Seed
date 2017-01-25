@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var cssnext = require('postcss-cssnext');
 var postcssFocus = require('postcss-focus');
 var postcssReporter = require('postcss-reporter');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -54,7 +55,12 @@ module.exports = {
       }, {
         test: /\.json$/,
         loader: 'json-loader',
-      },
+      },  {
+       test: /\.scss$/,
+       loader: 'style-loader!css-loader!sass-loader?sourceMap',
+       exclude: /node_modules|lib/,
+      }
+
     ],
   },
 

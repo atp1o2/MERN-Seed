@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import styles from '../../styles/App.css';
+import styles2 from '../../styles/app.scss';
 
 import Helmet from 'react-helmet';
 // import DevTools from './components/DevTools';
